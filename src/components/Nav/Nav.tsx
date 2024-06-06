@@ -64,17 +64,6 @@ function Nav({
       .set(overlayPathRef.current, {
         attr: { d: paths.step2.filled },
       });
-
-    // .to(overlayPathRef.current, {
-    //   duration: 1,
-    //   ease: 'sine.in',
-    //   attr: { d: paths.step2.inBetween.curve1 },
-    // })
-    // .to(overlayPathRef.current, {
-    //   duration: 1,
-    //   ease: 'power4',
-    //   attr: { d: paths.step2.unfilled },
-    // });
   };
 
   const hideModal = () => {
@@ -183,17 +172,17 @@ function Nav({
               animationBlackPhase();
             }}
           >
-            <span className={style.practiceText}>UX/UI практика</span> 🔥
+            <span className={style.practiceText}>UX/UI practice</span> 🔥
           </Link>
           <div className={style.anchorLinks}>
             <Link onClick={scrollToAnchor} href="#cases">
-              работы
+              cases
             </Link>
             <Link onClick={scrollToAnchor} href="#about">
-              обо мне
+              about me
             </Link>
             <Link onClick={scrollToAnchor} href="#contacts">
-              контакты
+              contacts
             </Link>
           </div>
         </section>
@@ -221,7 +210,7 @@ function Nav({
         type="button"
         onClick={scrollToTop}
       >
-        ↑ вернуться наверх
+        ↑ go back up
       </button>
     </>
   );

@@ -1,4 +1,4 @@
-import { tasksData } from '@/data/dataForProps';
+import { tasks } from '@/data/tasks';
 import getRandomTask from '@/utils/getRandomTask';
 import { gsap } from 'gsap';
 import type React from 'react';
@@ -11,7 +11,7 @@ interface ModalProps {
 }
 
 function Modal({ setModal, modal }: ModalProps) {
-  const randomTask = getRandomTask(tasksData);
+  const randomTask = getRandomTask(tasks);
   const headerRef = useRef(null);
   const descriptionRef = useRef(null);
   const overlayPathRef = useRef(null);

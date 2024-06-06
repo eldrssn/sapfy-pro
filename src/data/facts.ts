@@ -4,33 +4,32 @@ export const DIGITAL_FACTS: Fact[] = [
   {
     id: 1,
     title:
-      'Сколько пользователей считает удобство интерфейса ключевым при выборе продукта?',
+      'How Many Users Consider Interface Convenience Key When Choosing a Product?',
     description:
-      'До 90% пользователей считают удобство интерфейса одним из основных критериев при выборе продукта',
+      'Up to 90% of users consider interface convenience one of the main criteria when choosing a product.',
   },
   {
     id: 2,
     title:
-      'Сколько компаний замечает рост конверсии при глобализации интерфейса?',
+      'How Many Companies Notice Conversion Growth When Globalizing the Interface?',
     description:
-      'До 80% компаний замечают рост конверсии после адаптации интерфейса культурным предпочтениям пользователей',
+      "Up to 80% of companies notice conversion growth after adapting the interface to users' cultural preferences.",
   },
 ];
 
 export const GRAPHIC_FACTS: Fact[] = [
   {
     id: 1,
-    title:
-      'Сколько процентов покупателей предпочитают продукты с привлекательным дизайном?',
+    title: 'What Percentage of Buyers Prefer Products with Attractive Design?',
     description:
-      'Более 70% пользователей предпочитают печатные материалы с привлекательным и эстетичным дизайном',
+      'Over 70% of users prefer printed materials with an attractive and aesthetic design.',
   },
   {
     id: 2,
     title:
-      'Какой процент компаний инвестирует в дизайн упаковки для улучшения восприятия продукта?',
+      'What Percentage of Companies Invest in Packaging Design to Improve Product Perception?',
     description:
-      'Около 68% компаний увеличивают бюджет на дизайн упаковки с целью улучшить восприятие продукта',
+      'Approximately 68% of companies increase their budget for packaging design to improve product perception.',
   },
 ];
 
@@ -38,15 +37,15 @@ export const PROCESS_FACTS: Fact[] = [
   {
     id: 1,
     title:
-      'Какие шаблоны эффективнее для увеличения конверсии на лендингах и баннерах?',
+      'Which Templates Are More Effective for Increasing Conversion on Landing Pages and Banners?',
     description:
-      'Шаблоны с четкими call-to-action элементами могут значительно повысить конверсию, достигая прироста до 50%',
+      'Templates with clear call-to-action elements can significantly increase conversion, achieving an increase of up to 50%.',
   },
   {
     id: 2,
     title:
-      'Какой процент компаний использует автоматизированные системы для email-рассылок?',
+      'What Percentage of Companies Use Automated Systems for Email Distribution?',
     description:
-      'Более 80% компаний замечают улучшение конверсии после внедрения автоматизации маркетинговых коммуникаций',
+      'Over 80% of companies notice an improvement in conversion after implementing marketing communication automation.',
   },
 ];

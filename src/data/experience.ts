@@ -6,7 +6,7 @@ export const experience: ExperienceItem[] = [
     years: '2020 — 2024',
     link: 'Ingate',
     description:
-      'Проектирование интерфейса / Разработка баннеров и рекламных материалов / Разработка и поддержка style guides, design systems и технической документации / Стратегическое и операционное управление процессами проектирования',
+      'Interface design / Banner and advertising materials development / Development and support of style guides, design systems, and technical documentation / Strategic and operational management of design processes',
     profession: 'UX/UI Designer',
   },
   {
@@ -14,15 +14,14 @@ export const experience: ExperienceItem[] = [
     years: '2018 — 2020',
     link: 'Fit Health',
     description:
-      'Проектирование интерфейса / Разработка баннеров и рекламных материалов / Разработка и поддержка style guides и design systems / Графический дизайн',
+      'Interface design / Banner and advertising materials development / Development and support of style guides and design systems / Graphic design',
     profession: 'UX/UI Designer',
   },
   {
     id: 3,
     years: '2017 — 2018',
     link: 'Sputnik',
-    description:
-      'Администрирование сайтов / SEO-продвижение / Проектирование интерфейса',
+    description: 'Website administration / SEO promotion / Interface design',
     profession: 'Web Administrator',
   },
   {
@@ -30,14 +29,14 @@ export const experience: ExperienceItem[] = [
     years: '2016 — 2017',
     link: 'Present Photo',
     description:
-      'Портретная съемка / Продуктовая съемка / Съемка событий / Обработка фотографий / Графический дизайн / Разработка экшенов для автоматизации процесса обработки фотографий',
+      'Portrait photography / Product photography / Event photography / Photo editing / Graphic design / Development of actions for automating photo editing processes',
     profession: 'Фотограф-дизайнер',
   },
   {
     id: 5,
     years: '2015 — 2016',
     link: 'Digital Branding',
-    description: 'Телеграм-боты / Анализ данных / QA',
+    description: 'Telegram bots / Data analysis / QA',
     profession: 'Junior Python Developer',
   },
 ];

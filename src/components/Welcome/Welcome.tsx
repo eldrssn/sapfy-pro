@@ -82,9 +82,9 @@ function Welcome({
         </h2>
       </div>
       <h1 ref={headerRef} id="welcome-text">
-      Привет, я Светлана Баутина — UX/UI дизайнер. В настоящее время занимаюсь разработкой комплексных решений в области продуктового дизайна. 
+      Hello, I'm Svetlana Bautina — a UX/UI designer. Currently, I'm focused on developing comprehensive solutions in the field of product design.
         <br />
-        Моя цель — сделать мир удобнее и доступнее с помощью интерфейса.
+        My goal is to make the world more convenient and accessible through user interface design.
       </h1>
     </section>
   );

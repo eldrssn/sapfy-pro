@@ -32,16 +32,16 @@ export const Greetings = () => {
   return (
     <section className={styles.block} id="about">
       <p ref={headerRef}>
-        Я люблю фильм Back to the Future, музыку жанра Progressive Metal и
-        велосипед. А не пора ли прокатиться по вечернему парку? Дорога дарит не
-        только пейзажи, но и идеи. 🤔
+        I love the movie Back to the Future, Progressive Metal music, and
+        biking. Isn't it time to take a ride in the evening park? The road not
+        only offers landscapes but also ideas. 🤔
         <br />
-        С 2015 года я активно вовлечена в сферу IT. С 2018 года уделяю особое
-        внимание разработке пользовательских интерфейсов. Я стремлюсь к
-        конкретным и измеримым результатам, принимая решения, основанные на
-        проверенных гипотезах.
-        <br />Я убеждена, что баланс между удобством пользователя и повышением
-        прибыли компании является ключом к успеху.
+        Since 2015, I've been actively involved in the IT field. Since 2018,
+        I've been paying special attention to user interface development. I
+        strive for concrete and measurable results, making decisions based on
+        proven hypotheses.
+        <br />I believe that the balance between user convenience and increasing
+        company profits is the key to success.
       </p>
     </section>
   );

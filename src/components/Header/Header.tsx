@@ -47,7 +47,7 @@ function Header({ isLoadingEnds }: { isLoadingEnds: boolean }): JSX.Element {
           <Link href="https://t.me/sapfy">telegram</Link>
         </li>
         <li>
-          <Link href="https://pay.cloudtips.ru/p/d65a7d3a">поддержать 🌿</Link>
+          <Link href="https://pay.cloudtips.ru/p/d65a7d3a">support 🌿</Link>
         </li>
       </ul>
     </header>

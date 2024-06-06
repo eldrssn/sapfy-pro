@@ -1,8 +1,6 @@
 import type {  TaskData } from './types';
 
-
-
-export const tasksData: TaskData[] = [
+export const tasks: TaskData[] = [
   {
     id: 1,
     taskHeader: 'Задание такое-то #1',

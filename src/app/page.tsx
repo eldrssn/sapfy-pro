@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
   const isLoadingEnds = year === new Date().getFullYear();
 
   useEffect(() => {
-    if (isLoadingEnds || !modal) {
+    if (!modal) {
       document.body.style.overflowY = 'auto';
       document.body.style.height = 'auto';
     } else {

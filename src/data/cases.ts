@@ -3,9 +3,9 @@ import { Case } from './types';
 export const DIGITAL_CASES: Case[] = [
   {
     id: 1,
-    title: 'Стратегическое проектирование решений',
+    title: 'Strategic Solution Design',
     description:
-      'Через проектирование новых функций и возможностей продукта, основанное на исследовании потребностей пользователей, я достигла целевых показателей компании. Мой опыт включает проектирование сложных элементов интерфейса, внедрение обучения и онбординга, разработку стратегии действий и интерфейсных решений, персонализированные интерфейсы, а также оптимизацию различных процессов.',
+      "Through the design of new product features and capabilities based on user needs research, I have achieved the company's target metrics. My experience includes designing complex interface elements, implementing training and onboarding, developing action and interface strategy, personalized interfaces, and optimizing various processes.",
     linkTitle: 'rookee',
     link: 'https://rookee.ru/',
     firstImg: '/img/rookee/1_1.png',
@@ -13,9 +13,9 @@ export const DIGITAL_CASES: Case[] = [
   },
   {
     id: 2,
-    title: 'Модернизация и поддержка продукта',
+    title: 'Product Modernization and Support',
     description:
-      'Совместная работа с командой разработки привела к редизайну интерфейса продукта, что существенно улучшило пользовательский опыт и увеличило конверсию на 3%—10%. Кроме того, оптимизация внутренней CRM системы и интерфейса для менеджеров продаж и сотрудников сервиса повысила их эффективность. Адаптация продукта для мобильных устройств расширила его аудиторию и увеличила уровень удовлетворенности пользователей.',
+      'Collaboration with the development team led to a product interface redesign, significantly enhancing the user experience and increasing conversion by 3%—10%. Additionally, optimizing the internal CRM system and interface for sales managers and service employees improved their efficiency. Adapting the product for mobile devices expanded its audience and increased user satisfaction levels.',
     linkTitle: 'ingate',
     link: 'https://ingate.ru/',
     firstImg: '/img/ingate/1_1.png',
@@ -23,9 +23,9 @@ export const DIGITAL_CASES: Case[] = [
   },
   {
     id: 3,
-    title: 'Глобализация продукта',
+    title: 'Product Globalization',
     description:
-      'Благодаря комплексной адаптации сложной системы к потребностям и предпочтениям пользователей из различных стран, включая локализацию, культурные аспекты и соблюдение местного законодательства, я успешно достигла поставленных целей в рамках проекта. Этот подход обеспечил широкую доступность продукта для аудитории по всему миру и повысил его конкурентоспособность на международном рынке.',
+      'Thanks to the comprehensive adaptation of a complex system to the needs and preferences of users from various countries, including localization, cultural aspects, and compliance with local legislation, I successfully achieved project goals. This approach ensured wide product availability to audiences worldwide and increased its competitiveness in the international market.',
     linkTitle: 'rookee.global',
     link: 'https://rookee.global/',
     firstImg: '/img/rookee_global/1_1.png',
@@ -33,9 +33,9 @@ export const DIGITAL_CASES: Case[] = [
   },
   {
     id: 4,
-    title: 'Анализ данных и формулирование гипотез',
+    title: 'Data Analysis and Hypothesis Formulation',
     description:
-      'Я имею опыт создания и приоритизации гипотез для улучшения бизнеса через интерфейс и пользовательские пути, в тесном сотрудничестве с аналитиками и PM для точности и эффективности решений. Мои действия включали анализ и сбор статистики, тестирование гипотез, управление пользовательскими путями и создание продающих интерфейсных решений с учетом потребностей бизнеса и клиентов.',
+      'I have experience in creating and prioritizing hypotheses to improve business through interfaces and user paths, in close collaboration with analysts and PMs for accuracy and effectiveness of solutions. My actions included analysis and data collection, hypothesis testing, user path management, and creating selling interface solutions considering the needs of the business and customers.',
     linkTitle: 'prioritizing hypotheses',
     link: 'https://www.figma.com/community/file/1354577578820383826/prioritizing-hypotheses',
     firstImg: '/img/prioritizing-hypotheses/1_1.png',
@@ -46,9 +46,9 @@ export const DIGITAL_CASES: Case[] = [
 export const GRAPHIC_CASES: Case[] = [
   {
     id: 1,
-    title: 'Цифровой дизайн',
+    title: 'Digital Design',
     description:
-      'Мой опыт в области цифрового дизайна включает создание продающих презентаций для внутреннего и внешнего использования, а также разработку логотипов, визуальных концепций и рекламных материалов, таких как баннеры, объявления и видеоролики. Корректный графический материал способствует улучшению восприятия продукта и укреплению его позиции на рынке, а также оптимизации визуального облика и повышению его эффективности в привлечении клиентов.',
+      'My experience in digital design includes creating compelling presentations for internal and external use, as well as developing logos, visual concepts, and advertising materials such as banners, ads, and videos. Proper graphic material contributes to improving product perception and strengthening its position in the market, as well as optimizing visual appeal and increasing its effectiveness in attracting customers.',
     linkTitle: 'strelaspb',
     link: 'https://www.youtube.com/@STRELASPB',
     firstImg: '/img/digital-design/1_1.png',
@@ -56,10 +56,9 @@ export const GRAPHIC_CASES: Case[] = [
   },
   {
     id: 2,
-    title: 'Дизайн печатной продукции',
-    description: `Мой опыт в дизайне для печатной продукции включает создание упаковки и графических элементов с учетом требований бренда и рынка.
-    Я также занималась разработкой баннеров для билбордов, оформлением выставочных стендов и созданием визуально привлекательных входных групп для магазинов. Обладаю знаниями в области полиграфии и требований к макетам для печати.`,
-
+    title: 'Print Design',
+    description:
+      'My experience in print design includes creating packaging and graphic elements considering brand requirements and the market. I have also been involved in designing banners for billboards, exhibition booth decoration, and creating visually appealing storefront entrances. I have knowledge in the field of printing and layout requirements.',
     linkTitle: 'smart food',
     link: 'https://ozon.ru/t/qAJYR7Y',
     firstImg: '/img/print-design/1_1.png',
@@ -70,9 +69,9 @@ export const GRAPHIC_CASES: Case[] = [
 export const PROCESS_CASES: Case[] = [
   {
     id: 1,
-    title: 'Шаблоны',
+    title: 'Templates',
     description:
-      'Я создаю шаблоны для различных целей, включая продающие лендинги и эффективные баннеры,что улучшает производительность и результативность рекламных кампаний. Для каждого шаблона разрабатывается понятная документация, что позволяет сократить время разработки и улучшить визуальное воздействие материалов. Это оптимизирует рабочий процесс и увеличивает эффективность всей команды.',
+      ' I create templates for various purposes, including persuasive landing pages and effective banners, which enhance the performance and effectiveness of advertising campaigns. Clear documentation is developed for each template, reducing development time and improving the visual impact of materials. This optimizes the workflow and increases the efficiency of the entire team.',
     linkTitle: 'banner templates',
     link: 'hhttps://www.figma.com/community/file/1354563946146740301/banner-templates',
     firstImg: '/img/templates/1_1.png',
@@ -80,9 +79,9 @@ export const PROCESS_CASES: Case[] = [
   },
   {
     id: 2,
-    title: 'Автоматизация маркетинговых коммуникаций',
+    title: 'Marketing Communication Automation',
     description:
-      'Я создала и внедрила систему email-рассылок, автоматизировав процессы и улучшив конверсию и вовлеченность клиентов, а также оптимизировала рабочие процессы. В дополнение к этому, разработала стратегии для социальных медиа, включая создание оформления и контента для взаимодействия с аудиторией. Также занималась разработкой эффективных игр для бизнеса, привлекая пользователей, повышая их активность и увеличивая прибыль компании при минимальных затратах.',
+      'I have developed and implemented an email distribution system, automating processes and improving customer conversion and engagement, as well as optimizing workflows. In addition, I have developed strategies for social media, including creating design and content for audience interaction. I have also worked on developing effective business games, engaging users, increasing their activity, and increasing company profits with minimal costs.',
     linkTitle: 'quiz template',
     link: 'https://www.figma.com/community/file/1356973297481843450/quiz-template',
     firstImg: '/img/quiz/1_1.png',
@@ -90,9 +89,9 @@ export const PROCESS_CASES: Case[] = [
   },
   {
     id: 3,
-    title: 'Стратегия развития',
+    title: 'Development Strategy',
     description:
-      'Разработка стратегий в различных областях, включая расширение ассортимента, увеличение пользовательской базы, эффективное управление ресурсами и развитие персонала, была одной из моих задач. Эта работа включала анализ рынка, разработку стратегий внедрения новых продуктов, а также оптимизацию управления ресурсами. Моя стратегическая деятельность направлена на стимулирование роста бизнеса и профессиональное развитие персонала.',
+      'Developing strategies in various areas, including expanding the range, increasing the user base, efficient resource management, and staff development, has been one of my tasks. This work included market analysis, development of strategies for introducing new products, and optimization of resource management. My strategic activities are aimed at stimulating business growth and professional development of personnel.',
     linkTitle: 'trap plan',
     link: 'https://chrome-sheet-e2b.notion.site/trap-plan-bf3e68d782054c488eaffbf9bc8eba32?pvs=4',
     firstImg: '/img/strategy/1_1.png',
