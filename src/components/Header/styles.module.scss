@@ -1,0 +1,88 @@
+@import '../../app/vars';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  color: $mainTextColor;
+  max-width: 2000px;
+  width: 100%;
+  margin: auto 0;
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 320px) {
+    padding: 16px 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px 46px;
+
+    margin: 0 auto;
+  }
+
+  .links {
+    list-style: none;
+    margin: 0;
+    gap: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-end;
+      gap: 32px;
+      flex: 1;
+      margin-left: 0;
+    }
+  }
+
+  .logoLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logoText {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  li:nth-child(3) {
+    display: none;
+  }
+
+  @media screen and (min-width: 320px) {
+    a {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    a {
+      font-size: 16px;
+    }
+
+    li:nth-child(3) {
+      display: block;
+    }
+  }
+
+  @media screen and (width > 1440px) {
+    a {
+      font-size: 20px;
+    }
+  }
+}

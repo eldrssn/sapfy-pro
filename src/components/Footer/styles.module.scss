@@ -1,0 +1,158 @@
+@import '../../app/vars';
+
+.contacts {
+  padding: 0 38px 48px 38px;
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    a {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 130%;
+      font-family: 'PP Pangram Sans';
+      color: $mainTextColor;
+
+      &::after {
+        content: '';
+        display: block;
+        padding-top: 4px;
+        border-bottom: 1.8px solid #eee1d3;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 28px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        font-size: 32px;
+      }
+
+      @media screen and (min-width: 1441px) {
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      gap: 24px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 62px 56px 62px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 170px 96px 170px;
+  }
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 15px;
+  color: $mainTextColor;
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 100%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logoText {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .links {
+    list-style: none;
+    margin: 0;
+    gap: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-end;
+      gap: 32px;
+      flex: 1;
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 320px) {
+      a {
+        font-size: 13px;
+      }
+    }
+
+    li:nth-child(3) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      a {
+        font-size: 16px;
+      }
+
+      li:nth-child(3) {
+        display: block;
+      }
+    }
+
+    @media screen and (width > 1440px) {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 24px;
+    height: 64px;
+
+    .logoLink {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      line-height: 140%;
+
+      @media screen and (min-width: 1441px) {
+        font-size: 20px;
+      }
+    }
+
+    .links a {
+      font-size: 16px;
+      line-height: 140%;
+
+      @media screen and (min-width: 1441px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px 46px;
+    height: auto;
+  }
+}

@@ -1,0 +1,56 @@
+.swiper {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  opacity: 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper {
+  margin-right: 10vw !important;
+}
+
+.swiper-button-prev {
+  display: none;
+  visibility: hidden;
+}
+
+.swiper-button-next {
+  width: 56px;
+  height: 56px;
+  top: 42px;
+  right: 0;
+  translate: 40% 0;
+  background-image: url('../../../public/img/next-btn.svg');
+  background-size: contain;
+
+  @media screen and (max-width: 320px) {
+    background-image: url('../../../public/img/next-btn-fat.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 108px;
+    height: 108px;
+    top: 55px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 158px;
+    height: 158px;
+    top: 108px;
+  }
+
+  @media (min-width: 1441px) {
+    width: 180px;
+    height: 180px;
+  }
+}

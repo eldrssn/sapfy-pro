@@ -1,0 +1,78 @@
+@import '../app/vars';
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: 1440px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 425px) {
+  }
+}
+
+html:has(.loading) {
+  height: 100vh;
+  overflow: hidden;
+}
+
+html:not(:has(.loading)) {
+  height: auto;
+  overflow: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.loadinWrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+
+  .notFoundContent {
+    padding: 152px 452px 190px 170px;
+    font-family: 'PP Pangram Sans';
+    color: $mainTextColor;
+
+    h1 {
+      font-size: 32px;
+      height: 90px;
+      margin: 0 0 24px 0;
+      line-height: 130%;
+    }
+
+    a {
+      position: relative;
+      margin-top: 24px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #eee1d3;
+        width: auto;
+      }
+    }
+  }
+
+  .gallery {
+    padding: 0px 0px 96px 0px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
+}

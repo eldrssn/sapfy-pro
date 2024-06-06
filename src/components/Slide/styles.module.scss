@@ -1,0 +1,161 @@
+@import '../../app/vars';
+
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+
+  .content {
+    display: flex;
+    padding: 20px 23px 23px 23px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #fff;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      padding: 32px 38px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 86px 124px 96px 124px;
+    }
+
+    @media screen and (width > 1440px) {
+      padding: 108px 170px 118px 170px;
+    }
+
+    .title {
+      font-family: 'PP Pangram Sans';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin: 0;
+      margin-bottom: 8px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 22px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 16px;
+        font-size: 24px;
+      }
+
+      @media screen and (width > 1440px) {
+        font-size: 30px;
+      }
+    }
+
+    .story {
+      @media screen and (min-width: 1440px) {
+        max-width: 818px;
+      }
+
+      @media screen and (width > 1440px) {
+        max-width: 1100px;
+      }
+    }
+
+    .description {
+      font-family: 'PP Pangram Sans';
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      color: $secondaryTextColor;
+      line-height: 140%;
+      margin: 0;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 24px;
+      }
+
+      @media screen and (width > 1440px) {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      font-size: 13px;
+      font-family: 'PP Pangram Sans';
+      line-height: 140%;
+      position: relative;
+      color: $mainTextColor;
+
+      &::after {
+        content: '';
+        display: block;
+        padding-top: 4px;
+        border-bottom: 1.8px solid #eee1d3;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media screen and (width > 1440px) {
+        font-size: 20px;
+      }
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 24px;
+      gap: 16px;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 32px;
+        gap: 24px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-top: 56px;
+        gap: 32px;
+      }
+
+      @media screen and (width > 1440px) {
+        margin-top: 72px;
+        gap: 48px;
+      }
+    }
+
+    .slideImgWrapper {
+      position: relative;
+      width: 100%;
+      min-height: 135px;
+      aspect-ratio: 220 /135;
+      cursor: pointer;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      @media screen and (min-width: 768px) {
+        min-height: 172px;
+      }
+    }
+  }
+}

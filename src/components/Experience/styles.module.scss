@@ -1,0 +1,187 @@
+@import '../../app/vars';
+
+.history {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -32px;
+  padding: 0 15px 48px 15px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    padding: 20px 23px 23px 23px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    background-image: url('../../../public/img/tree.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+
+    .profession {
+      color: #909090;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      position: relative;
+
+      img {
+        border-radius: 50%;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 154px;
+        height: 154px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 158px;
+        height: 158px;
+      }
+
+      @media screen and (min-width: 1441px) {
+        margin-left: auto;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 1441px) {
+        max-width: 50%;
+      }
+
+      .listItem {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          align-self: normal;
+          margin-top: 24px;
+          margin-bottom: 24px;
+          height: 1px;
+          background-color: #eee1d3;
+          width: auto;
+
+          @media screen and (min-width: 768px) {
+            margin-top: 32px;
+            margin-bottom: 32px;
+          }
+        }
+
+        &:last-child::after {
+          display: none;
+        }
+
+        .header {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 4px;
+          color: $mainTextColor;
+          margin: 0;
+          margin-bottom: 8px;
+          font-feature-settings:
+            'clig' off,
+            'liga' off;
+
+          .years {
+            margin: 0;
+            min-width: 140px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          .link {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          @media screen and (min-width: 768px) {
+            .years {
+              font-size: 22px;
+            }
+
+            .link {
+              font-size: 22px;
+            }
+
+            flex-direction: row;
+            gap: 24px;
+            margin-bottom: 16px;
+          }
+
+          @media screen and (min-width: 1440px) {
+            h1 {
+              font-size: 24px;
+            }
+
+            .link {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .description {
+          font-size: 13px;
+          line-height: 140%;
+          color: $secondaryTextColor;
+          margin-bottom: 16px;
+          line-break: auto;
+        }
+
+        .profession {
+          font-size: 13px;
+          line-height: 140%;
+        }
+
+        @media screen and (min-width: 768px) {
+          .profession,
+          .description {
+            font-size: 16px;
+          }
+          .description {
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        flex: 1 0 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      padding: 38px;
+      gap: 56px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 86px 124px 96px 501px;
+    }
+
+    @media screen and (min-width: 1441px) {
+      padding: 86px 124px 96px 124px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: -24px;
+    padding: 0 24px 56px 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: -64px;
+    padding: 0 46px 96px 46px;
+  }
+}

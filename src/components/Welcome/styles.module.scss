@@ -1,0 +1,84 @@
+@import '../../app/vars';
+
+.yearsContainer {
+  position: absolute;
+  left: 0;
+  max-width: 2000px;
+  padding-left: 38px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 62px 56px 62px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 170px 96px 170px;
+  }
+
+  @media screen and (width > 1440px) {
+    padding: 0 170px 140px 170px;
+  }
+}
+
+.years {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: $mainTextColor;
+  transition: all ease;
+  opacity: 0;
+}
+
+.block {
+  width: 100%;
+  padding: 24px 38px 48px;
+  position: relative;
+  max-width: 2000px;
+  margin: 0 auto;
+
+  h1 {
+    color: $mainTextColor;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 32px;
+      padding-right: 283px;
+    }
+
+    @media screen and (width > 1440px) {
+      font-size: 40px;
+      width: 1000px;
+      padding: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 62px 56px 62px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 170px 96px 170px;
+  }
+
+  @media screen and (width > 1440px) {
+    padding: 72px 170px 140px 170px;
+  }
+}

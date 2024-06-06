@@ -1,0 +1,54 @@
+.gallery {
+  flex-grow: 1;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 140px;
+  display: flex;
+  gap: 48px;
+  width: 110vw;
+  margin-left: -5vw;
+  margin-right: -5vw;
+
+  @media (max-width: 1440px) {
+    padding-bottom: 96px;
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 56px;
+
+    gap: 24px;
+    width: 150vw;
+    margin-left: -25vw;
+    margin-right: -25vw;
+  }
+
+  @media (max-width: 425px) {
+    padding-bottom: 48px;
+
+    gap: 16px;
+    width: 250vw;
+    margin-left: -75vw;
+    margin-right: -75vw;
+  }
+}
+
+.galleryImageWrapper {
+  position: relative;
+  aspect-ratio: 857 / 493;
+  flex-basis: 33%;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+}
+
+.hiddenImg {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+}
