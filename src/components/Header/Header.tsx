@@ -36,7 +36,7 @@ function Header({ isLoadingEnds }: { isLoadingEnds: boolean }): JSX.Element {
 
       <ul className={style.links}>
         <li>
-          <Link href="#">en</Link>
+          <Link href="#">ru</Link>
         </li>
         <li>
           <Link href="https://www.dropbox.com/scl/fi/wv5qdrwb7tnoe6f7m7h1l/CV_Svetlana-Bautina.pdf?rlkey=am0q13l49o8n2jig0eyv2annv&dl=0">

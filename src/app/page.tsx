@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
   const isLoadingEnds = year === new Date().getFullYear();
 
   useEffect(() => {
-    if (!modal) {
+    if (isLoadingEnds || !modal) {
       document.body.style.overflowY = 'auto';
       document.body.style.height = 'auto';
     } else {
@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
   }, [isLoadingEnds, modal]);
 
   useEffect(() => {
-    if (isLoadingEnds) {
+    if (isLoadingEnds && window?.innerWidth >= 768) {
       (async () => {
         const LocomotiveScroll = (await import('locomotive-scroll' as any))
           .default;
