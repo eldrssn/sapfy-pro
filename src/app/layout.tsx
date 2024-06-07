@@ -1,24 +1,34 @@
-import React from 'react'
-import type { Metadata } from 'next'
-import './global.scss'
+import React from 'react';
+import type { Metadata } from 'next';
+import './global.scss';
 
 export const metadata: Metadata = {
-  title: 'Светлана Баутина — UX/UI Дизайнер',
-  description: 'Светлана Баутина — опытный UX/UI дизайнер, специализирующийся на стратегическом проектировании, модернизации продукта и его глобализации. Получите комплексные решения в области продуктового дизайна, направленные на удобство и доступность. Оптимизируйте пользовательский опыт и повышайте конверсию с помощью профессиональных подходов и современных методик UX/UI практики.',
-  keywords: 'UX/UI дизайнер, стратегическое проектирование, модернизация продукта, глобализация, пользовательский опыт, конверсия, продуктовый дизайн, sapfy, СПб, продуктовый дизайнер, обучение UX/UI, UX/UI практика, ux/ui, design system, prototyping, app design, visual design, icon design, branding, identity, user experience'
-}
+  title: 'Svetlana Bautina — UX/UI Designer',
+  description:
+    'Svetlana Bautina is an experienced UX/UI designer specializing in strategic design, product modernization, and globalization. Get comprehensive solutions in product design aimed at convenience and accessibility. Optimize user experience and increase conversion rates with professional UX/UI practices and modern methodologies.',
+  keywords:
+    'UX/UI designer, strategic design, product modernization, globalization, user experience, conversion, product design, sapfy, St. Petersburg, product designer, UX/UI training, UX/UI practice, design system, prototyping, app design, visual design, icon design, branding, identity, user experience',
+};
 
-export default function RootLayout ({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>): JSX.Element {
   return (
     <html lang="ru">
       <head>
         <link rel="icon" href="img/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="16x16" href="/img/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="32x32" href="/img/favicon-32x32.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="16x16"
+          href="/img/favicon-16x16.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="32x32"
+          href="/img/favicon-32x32.png"
+        />
       </head>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
