@@ -15,6 +15,7 @@ import { DIGITAL_CASES, GRAPHIC_CASES, PROCESS_CASES } from '@/data/cases';
 import { Facts } from '@/components/Facts';
 import { DIGITAL_FACTS, GRAPHIC_FACTS, PROCESS_FACTS } from '@/data/facts';
 import { Experience } from '@/components/Experience';
+import { useDisableBodyScroll } from '@/hooks/use-disable-body-scroll';
 
 const cn = classnames.bind(styles);
 
@@ -24,18 +25,10 @@ export default function Home(): JSX.Element {
 
   const isLoadingEnds = year === new Date().getFullYear();
 
-  useEffect(() => {
-    if (isLoadingEnds || !modal) {
-      document.body.style.overflowY = 'auto';
-      document.body.style.height = 'auto';
-    } else {
-      document.body.style.overflowY = 'hidden';
-      document.body.style.maxHeight = '100vh';
-    }
-  }, [isLoadingEnds, modal]);
+  useDisableBodyScroll(isLoadingEnds);
 
   useEffect(() => {
-    if (isLoadingEnds && window?.innerWidth >= 768) {
+    if (isLoadingEnds) {
       (async () => {
         const LocomotiveScroll = (await import('locomotive-scroll' as any))
           .default;
@@ -60,19 +53,19 @@ export default function Home(): JSX.Element {
 
         <Cases
           isLoadingEnds={isLoadingEnds}
-          title="Graphic Design"
+          title="Digital Design"
           cases={DIGITAL_CASES}
         />
         <Facts facts={DIGITAL_FACTS} />
         <Cases
           isLoadingEnds={isLoadingEnds}
-          title="Process Design"
+          title="Graphic Design"
           cases={GRAPHIC_CASES}
         />
         <Facts facts={GRAPHIC_FACTS} />
         <Cases
           isLoadingEnds={isLoadingEnds}
-          title="Digital Design"
+          title="Process Design"
           cases={PROCESS_CASES}
         />
         <Facts facts={PROCESS_FACTS} />

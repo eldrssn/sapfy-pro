@@ -1,64 +1,64 @@
-import type {  TaskData } from './types';
+import type { TaskData } from './types';
 
 export const tasks: TaskData[] = [
   {
     id: 1,
-    taskHeader: 'Задание такое-то #1',
+    taskHeader: 'Task #1',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 2,
-    taskHeader: 'Задание такое-то #2',
+    taskHeader: 'Task #2',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 3,
-    taskHeader: 'Задание такое-то #3',
+    taskHeader: 'Task #3',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 4,
-    taskHeader: 'Задание такое-то #4',
+    taskHeader: 'Task #4',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 5,
-    taskHeader: 'Задание такое-то #5',
+    taskHeader: 'Task #5',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 6,
-    taskHeader: 'Задание такое-то #6',
+    taskHeader: 'Task #6',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 7,
-    taskHeader: 'Задание такое-то #7',
+    taskHeader: 'Task #7',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 8,
-    taskHeader: 'Задание такое-то #8',
+    taskHeader: 'Task #8',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 9,
-    taskHeader: 'Задание такое-то #9',
+    taskHeader: 'Task #9',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
   {
     id: 10,
-    taskHeader: 'Задание такое-то #10',
+    taskHeader: 'Task #10',
     taskDescription:
-      'Для таких компаний, как  и других, я разработал сложные системы компонентов и задокументировал рекомендации, позволяющие гармонизировать цифровые продукты в организованные и хорошо настроенные экосистемы. Эти системы проектирования удовлетворяют повседневные и стратегические потребности продуктовых команд клиентов, а также внешних сторон.',
+      'For companies like and others, I have developed complex component systems and documented guidelines that allow digital products to be harmonized into organized and well-tuned ecosystems. These design systems meet the daily and strategic needs of client product teams as well as external parties.',
   },
 ];

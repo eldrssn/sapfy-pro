@@ -12,6 +12,7 @@ function GalleryFooter({ crow }: { crow?: boolean }) {
   const startRef = useRef<HTMLDivElement | null>(null);
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap
         .timeline({
@@ -84,8 +85,8 @@ function GalleryFooter({ crow }: { crow?: boolean }) {
         .to(scrollImg21Ref.current, {
           opacity: 0,
         });
-      
-        const img3 = gsap
+
+      const img3 = gsap
         .timeline(scrollTriggerConfig)
         .to(scrollImg31Ref.current, {
           opacity: 1,
@@ -103,12 +104,7 @@ function GalleryFooter({ crow }: { crow?: boolean }) {
     <section className={style.gallery} id="gallery-footer">
       <div className={style.content} ref={startRef}>
         <div className={style.galleryImageWrapper} ref={img1Ref}>
-          <Image
-            src={'/img/f-1-1.png'}
-            alt="Image-2"
-            loading="eager"
-            fill
-          />
+          <Image src={'/img/f-1-1.png'} alt="Image-2" loading="eager" fill />
           <Image
             className={style.hiddenImg}
             ref={scrollImg11Ref}
@@ -146,7 +142,7 @@ function GalleryFooter({ crow }: { crow?: boolean }) {
           />
         </div>
         <div className={style.galleryImageWrapper} ref={img3Ref}>
-          <Image src={'/img/f-3-1.png'} alt="Image-3"  fill/>
+          <Image src={'/img/f-3-1.png'} alt="Image-3" fill />
           <Image
             className={style.hiddenImg}
             ref={scrollImg31Ref}

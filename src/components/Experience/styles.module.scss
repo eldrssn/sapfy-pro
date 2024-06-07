@@ -26,22 +26,23 @@
     }
 
     .avatar {
-      width: 120px;
-      height: 120px;
       position: relative;
 
+      video,
       img {
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
-      }
 
-      @media screen and (min-width: 768px) {
-        width: 154px;
-        height: 154px;
-      }
+        @media screen and (min-width: 768px) {
+          width: 154px;
+          height: 154px;
+        }
 
-      @media screen and (min-width: 1440px) {
-        width: 158px;
-        height: 158px;
+        @media screen and (min-width: 1440px) {
+          width: 158px;
+          height: 158px;
+        }
       }
 
       @media screen and (min-width: 1441px) {

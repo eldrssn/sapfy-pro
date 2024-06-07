@@ -122,11 +122,10 @@ function Modal({ setModal, modal }: ModalProps) {
         </div>
 
         <div ref={closeBtnRef} className={style.closeBtn} onClick={handleClose}>
-          ← закрыть
+          ← close
         </div>
       </section>
 
-      {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
       <svg
         className={style.overlay}
         width="100%"

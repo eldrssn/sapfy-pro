@@ -3,6 +3,7 @@ import classnames from 'classnames/bind';
 import Link from 'next/link';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import style from './styles.module.scss';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const cn = classnames.bind(style);
 
@@ -105,6 +106,7 @@ function Nav({
   }, [isLoadingEnds]);
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap
         .timeline({

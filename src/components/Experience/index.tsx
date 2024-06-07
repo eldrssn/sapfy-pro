@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useLayoutEffect, useRef } from 'react';
-import avaImage from '../../../public/img/ava.png';
 import style from './styles.module.scss';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -62,16 +60,7 @@ export const Experience = () => {
     <section className={style.history}>
       <div className={style.content} ref={startRef}>
         <div className={style.avatar} ref={avatarRef}>
-          <Image
-            src={avaImage}
-            quality={100}
-            alt="Ava"
-            loading="lazy"
-            style={{
-              objectFit: 'contain',
-            }}
-            fill
-          />
+          <video src="/video/vid.mp4" loop autoPlay muted playsInline />
         </div>
 
         <div className={style.list} ref={itemRef}>
@@ -81,6 +70,7 @@ export const Experience = () => {
                 <div key={element.id} className={style.listItem}>
                   <div className={style.header}>
                     <span className={style.years}>{element.years}</span>
+                    <div className={style.link}>{element.link}</div>
                   </div>
 
                   <p className={style.description}>{element.description}</p>

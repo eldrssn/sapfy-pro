@@ -24,7 +24,7 @@
     }
 
     @media screen and (width > 1440px) {
-      padding: 108px 170px 118px 170px;
+      padding: 108px 124 118px 124px;
     }
 
     .title {
@@ -137,14 +137,10 @@
       position: relative;
       width: 100%;
       min-height: 135px;
-      aspect-ratio: 220 /135;
+      aspect-ratio: 16 / 9;
       cursor: pointer;
       filter: grayscale(100%);
       transition: filter 0.3s ease-in-out;
-
-      &:hover {
-        filter: grayscale(0);
-      }
 
       img {
         width: 100%;
@@ -155,6 +151,14 @@
 
       @media screen and (min-width: 768px) {
         min-height: 172px;
+      }
+
+      @media screen and (min-width: 767px) {
+        filter: grayscale(100%);
+      }
+
+      &:hover {
+        filter: grayscale(0);
       }
     }
   }

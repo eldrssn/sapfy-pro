@@ -16,12 +16,25 @@
   right: 0;
   left: 0;
 
+  @media screen and (max-width: 1024px) {
+    padding: 24px 62px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 38px 24px;
+  }
+
   .content {
     display: flex;
     gap: 32px;
     color: #eee1d3;
     z-index: 9999;
     opacity: 1;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .header {
       flex: 1;
@@ -46,12 +59,19 @@
 
   .closeBtn {
     font-family: 'PP Pangram Sans';
-    width: max-content;
+    width: auto;
     padding: 25px 32px;
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.6);
     cursor: pointer;
     opacity: 1;
+    position: fixed;
+    bottom: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      bottom: 16px;
+    }
   }
 }
 

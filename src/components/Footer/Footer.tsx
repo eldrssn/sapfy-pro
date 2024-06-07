@@ -14,6 +14,7 @@ function Footer(): JSX.Element {
   const startRef = useRef<HTMLDivElement | null>(null);
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap
         .timeline({
@@ -56,7 +57,7 @@ function Footer(): JSX.Element {
             </Link>
           </li>
           <li ref={link2Ref}>
-            <Link href="/" target="_blank">
+            <Link href="mailto:vis.sapfy@gmail.com" target="_blank">
               email/sapfy ↗
             </Link>
           </li>
@@ -87,17 +88,15 @@ function Footer(): JSX.Element {
             <Link href="#">en</Link>
           </li>
           <li>
-            <Link href="https://www.dropbox.com/scl/fi/wv5qdrwb7tnoe6f7m7h1l/CV_Svetlana-Bautina.pdf?rlkey=am0q13l49o8n2jig0eyv2annv&dl=0">
+            <Link href="https://www.dropbox.com/scl/fi/wv5qdrwb7tnoe6f7m7h1l/CV_Svetlana-Bautina.pdf?rlkey=am0q13l49o8n2jig0eyv2annv&dl=0" target='_blank'>
               cv
             </Link>
           </li>
           <li>
-            <Link href="https://t.me/sapfy">telegram</Link>
+            <Link href="https://t.me/sapfy" target='_blank'>telegram</Link>
           </li>
           <li>
-            <Link href="https://pay.cloudtips.ru/p/d65a7d3a">
-              поддержать 🌿
-            </Link>
+            <Link href="https://pay.cloudtips.ru/p/d65a7d3a" target='_blank'>support 🌿</Link>
           </li>
         </ul>
       </footer>

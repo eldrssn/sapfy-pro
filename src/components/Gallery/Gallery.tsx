@@ -21,14 +21,17 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
   const scrollImg11Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg12Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg1DefRef = useRef<HTMLImageElement | null>(null);
+  const scrollImgCrow1Ref = useRef<HTMLImageElement | null>(null);
 
   const scrollImg21Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg22Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg2DefRef = useRef<HTMLImageElement | null>(null);
+  const scrollImgCrow2Ref = useRef<HTMLImageElement | null>(null);
 
   const scrollImg31Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg32Ref = useRef<HTMLImageElement | null>(null);
   const scrollImg3DefRef = useRef<HTMLImageElement | null>(null);
+  const scrollImgCrow3Ref = useRef<HTMLImageElement | null>(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -41,23 +44,30 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
     });
   }, []);
 
-  const scrollTriggerConfig = {
-    scrollTrigger: {
-      trigger: '#welcome-text',
-      endTrigger: '#cases',
-      start: '-50% top',
-      end: '15% 50%',
-      scrub: true,
-    },
-  };
-
   useLayoutEffect(() => {
+    const isDesktop = window.innerWidth >= 767;
+    const scrollTriggerConfig = {
+      scrollTrigger: {
+        trigger: '#welcome-text',
+        endTrigger: '#cases',
+        start: isDesktop ? '-50% top' : '-20% top',
+        end: isDesktop ? '15% 50%' : '30% 50%',
+        scrub: true,
+      },
+    };
+
     const ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
       const img1 = gsap
         .timeline(scrollTriggerConfig)
         .to(scrollImg11Ref.current, {
           opacity: 1,
+        })
+        .to(scrollImgCrow1Ref.current, {
+          opacity: 1,
+        })
+        .to(scrollImgCrow1Ref.current, {
+          opacity: 0,
         })
         .to(scrollImg11Ref.current, {
           opacity: 0,
@@ -81,6 +91,12 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
         .to(scrollImg22Ref.current, {
           opacity: 1,
         })
+        .to(scrollImgCrow2Ref.current, {
+          opacity: 1,
+        })
+        .to(scrollImgCrow2Ref.current, {
+          opacity: 0,
+        })
         .to(scrollImg22Ref.current, {
           opacity: 0,
         })
@@ -101,6 +117,12 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
         })
         .to(scrollImg32Ref.current, {
           opacity: 1,
+        })
+        .to(scrollImgCrow3Ref.current, {
+          opacity: 1,
+        })
+        .to(scrollImgCrow3Ref.current, {
+          opacity: 0,
         })
         .to(scrollImg31Ref.current, {
           opacity: 0,
@@ -139,6 +161,14 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
             className={style.hiddenImg}
             ref={scrollImg11Ref}
             src={'/img/1-1.png'}
+            alt="Image-2"
+            loading="eager"
+            fill
+          />
+          <Image
+            className={style.hiddenImg}
+            ref={scrollImgCrow1Ref}
+            src={'/img/crow-1.png'}
             alt="Image-2"
             loading="eager"
             fill
@@ -185,6 +215,14 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
             loading="eager"
             fill
           />
+          <Image
+            className={style.hiddenImg}
+            ref={scrollImgCrow2Ref}
+            src={'/img/crow-2.png'}
+            alt="Image-2"
+            loading="eager"
+            fill
+          />
         </div>
         <div className={style.galleryImageWrapper} ref={img3Ref}>
           <Image
@@ -215,6 +253,14 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
             className={style.hiddenImg}
             ref={scrollImg32Ref}
             src={'/img/3-2.png'}
+            alt="Image-2"
+            loading="eager"
+            fill
+          />
+          <Image
+            className={style.hiddenImg}
+            ref={scrollImgCrow3Ref}
+            src={'/img/crow-3.png'}
             alt="Image-2"
             loading="eager"
             fill
