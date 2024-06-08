@@ -1,22 +1,15 @@
 @import '../app/vars';
 
-.welcome {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  min-height: 100vh;
-  overflow: hidden;
-}
+  overflow-x: clip;
 
-.loadinWrapper {
-  height: 100vh;
-  overflow: hidden;
+  &.loading {
+    height: 100vh;
+    overflow-y: hidden;
+  }
 }
 .container {
   overflow: hidden;

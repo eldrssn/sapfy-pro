@@ -13,7 +13,15 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const cn = classNames.bind(style);
 
-function Gallery({ crow, year }: { crow: boolean; year: number }) {
+function Gallery({
+  crow,
+  year,
+  isLoadingEnds,
+}: {
+  crow: boolean;
+  year: number;
+  isLoadingEnds: boolean;
+}) {
   const img1Ref = useRef<HTMLDivElement | null>(null);
   const img2Ref = useRef<HTMLDivElement | null>(null);
   const img3Ref = useRef<HTMLDivElement | null>(null);
@@ -69,9 +77,13 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
         .to(scrollImgCrow1Ref.current, {
           opacity: 0,
         })
-        .to(scrollImg11Ref.current, {
-          opacity: 0,
-        })
+        .to(
+          scrollImg11Ref.current,
+          {
+            opacity: 0,
+          },
+          '<',
+        )
         .to(scrollImg1DefRef.current, {
           opacity: 1,
         })
@@ -97,9 +109,13 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
         .to(scrollImgCrow2Ref.current, {
           opacity: 0,
         })
-        .to(scrollImg22Ref.current, {
-          opacity: 0,
-        })
+        .to(
+          scrollImg22Ref.current,
+          {
+            opacity: 0,
+          },
+          '<',
+        )
         .to(scrollImg2DefRef.current, {
           opacity: 1,
         })
@@ -124,9 +140,13 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
         .to(scrollImgCrow3Ref.current, {
           opacity: 0,
         })
-        .to(scrollImg31Ref.current, {
-          opacity: 0,
-        })
+        .to(
+          scrollImg31Ref.current,
+          {
+            opacity: 0,
+          },
+          '<',
+        )
         .to(
           scrollImg32Ref.current,
           {
@@ -141,11 +161,22 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
     <section className={style.gallery}>
       <div className={style.content}>
         <div className={style.galleryImageWrapper} ref={img1Ref}>
+          {!isLoadingEnds && (
+            <Image
+              src={backgroundBalckImage1}
+              alt="Image-2"
+              fill
+              loading="eager"
+            />
+          )}
           <Image
-            src={backgroundBalckImage1}
+            className={cn(style.hiddenImg, {
+              [style.show]: year > 2010,
+            })}
+            src={backgroundImage1}
             alt="Image-2"
-            fill
             loading="eager"
+            fill
           />
           <Image
             ref={scrollImg1DefRef}
@@ -183,8 +214,20 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
           />
         </div>
         <div className={style.galleryImageWrapper} ref={img2Ref}>
+          {!isLoadingEnds && (
+            <Image
+              src={backgroundBalckImage2}
+              alt="Image-2"
+              fill
+              loading="eager"
+            />
+          )}
+
           <Image
-            src={backgroundBalckImage2}
+            className={cn(style.hiddenImg, {
+              [style.show]: year > 2017,
+            })}
+            src={backgroundImage2}
             alt="Image-2"
             fill
             loading="eager"
@@ -225,8 +268,19 @@ function Gallery({ crow, year }: { crow: boolean; year: number }) {
           />
         </div>
         <div className={style.galleryImageWrapper} ref={img3Ref}>
+          {!isLoadingEnds && (
+            <Image
+              src={backgroundBalckImage3}
+              alt="Image-3"
+              fill
+              loading="eager"
+            />
+          )}
           <Image
-            src={backgroundBalckImage3}
+            className={cn(style.hiddenImg, {
+              [style.show]: year > 2022,
+            })}
+            src={backgroundImage3}
             alt="Image-3"
             fill
             loading="eager"

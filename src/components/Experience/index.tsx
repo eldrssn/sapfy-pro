@@ -72,7 +72,6 @@ export const Experience = () => {
                     <span className={style.years}>{element.years}</span>
                     <div className={style.link}>{element.link}</div>
                   </div>
-
                   <p className={style.description}>{element.description}</p>
                   <p className={style.profession}>{element.profession}</p>
                 </div>

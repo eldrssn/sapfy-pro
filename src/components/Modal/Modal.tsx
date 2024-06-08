@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import type React from 'react';
 import { useLayoutEffect, useRef } from 'react';
 import style from './styles.module.scss';
+import './styles.css';
 
 interface ModalProps {
   setModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -111,36 +112,26 @@ function Modal({ setModal, modal }: ModalProps) {
 
   return (
     <>
-      <section className={style.modalContainer}>
+      <section
+        className={style.modalContainer}
+        id="modal-container"
+        data-lenis-prevent
+      >
         <div className={style.content}>
           <h2 ref={headerRef} className={style.header}>
-            {randomTask.taskHeader}
+            {randomTask.title}
           </h2>
-          <p ref={descriptionRef} className={style.description}>
-            {randomTask.taskDescription}
-          </p>
+          <div
+            ref={descriptionRef}
+            className={style.description}
+            dangerouslySetInnerHTML={{ __html: randomTask.body }}
+          ></div>
         </div>
 
         <div ref={closeBtnRef} className={style.closeBtn} onClick={handleClose}>
           ← close
         </div>
       </section>
-
-      <svg
-        className={style.overlay}
-        width="100%"
-        height="100%"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <path
-          ref={overlayPathRef}
-          fill="transparent"
-          stroke="transparent"
-          vectorEffect="non-scaling-stroke"
-          d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
-        />
-      </svg>
     </>
   );
 }

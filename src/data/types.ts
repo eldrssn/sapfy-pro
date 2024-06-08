@@ -14,12 +14,14 @@ export type Case = {
   link: string;
   firstImg: string;
   secondImg: string;
+  firstImgLink?: string;
+  secondImgLink?: string;
 };
 
 export type TaskData = {
   id: number;
-  taskHeader: string;
-  taskDescription: string;
+  title: string;
+  body: string;
 };
 
 export type Fact = {

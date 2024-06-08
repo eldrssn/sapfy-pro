@@ -138,7 +138,6 @@
       width: 100%;
       min-height: 135px;
       aspect-ratio: 16 / 9;
-      cursor: pointer;
       filter: grayscale(100%);
       transition: filter 0.3s ease-in-out;
 
@@ -151,13 +150,13 @@
 
       @media screen and (min-width: 768px) {
         min-height: 172px;
+
+        &:hover {
+          filter: grayscale(0);
+        }
       }
 
-      @media screen and (min-width: 767px) {
-        filter: grayscale(100%);
-      }
-
-      &:hover {
+      @media screen and (max-width: 767px) {
         filter: grayscale(0);
       }
     }

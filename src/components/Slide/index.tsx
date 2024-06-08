@@ -2,7 +2,14 @@
 import type { Case } from '@/data/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { FC, useLayoutEffect, useRef } from 'react';
+import React, {
+  FC,
+  ReactNode,
+  Ref,
+  forwardRef,
+  useLayoutEffect,
+  useRef,
+} from 'react';
 import style from './styles.module.scss';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -11,8 +18,46 @@ type Props = {
   slide: Case;
 };
 
+type LinkOrDivProps = {
+  link?: string;
+  children: ReactNode;
+};
+
+const LinkWrapper = forwardRef<HTMLAnchorElement, any>((props, ref) => (
+  <a ref={ref} {...props} />
+));
+
+const LinkOrDiv = forwardRef<
+  HTMLDivElement | HTMLAnchorElement,
+  LinkOrDivProps
+>(({ link, children }, ref) => {
+  return link ? (
+    <Link passHref href={link} legacyBehavior>
+      <LinkWrapper
+        className={style.slideImgWrapper}
+        ref={ref as Ref<HTMLAnchorElement>}
+      >
+        {children}
+      </LinkWrapper>
+    </Link>
+  ) : (
+    <div className={style.slideImgWrapper} ref={ref as Ref<HTMLDivElement>}>
+      {children}
+    </div>
+  );
+});
+
 export const Slide: FC<Props> = ({
-  slide: { title, description, link, linkTitle, firstImg, secondImg },
+  slide: {
+    title,
+    description,
+    link,
+    linkTitle,
+    firstImg,
+    secondImg,
+    firstImgLink,
+    secondImgLink,
+  },
 }) => {
   const headingRef = useRef<HTMLDivElement | null>(null);
   const descriptionRef = useRef<HTMLDivElement | null>(null);
@@ -69,22 +114,12 @@ export const Slide: FC<Props> = ({
           </Link>
         </div>
         <div className={style.images}>
-          <Link
-            target="_blank"
-            href={link}
-            className={style.slideImgWrapper}
-            ref={image1Ref}
-          >
+          <LinkOrDiv link={firstImgLink} ref={image1Ref}>
             <Image src={firstImg} alt="Image-1" fill loading="lazy" />
-          </Link>
-          <Link
-            target="_blank"
-            href={link}
-            className={style.slideImgWrapper}
-            ref={image2Ref}
-          >
+          </LinkOrDiv>
+          <LinkOrDiv link={secondImgLink} ref={image2Ref}>
             <Image src={secondImg} alt="Image-2" fill loading="lazy" />
-          </Link>
+          </LinkOrDiv>
         </div>
       </div>
     </section>

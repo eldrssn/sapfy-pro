@@ -14,7 +14,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>): JSX.Element {
   return (
-    <html lang="ru">
+    <html lang="en">
       <head>
         <link rel="icon" href="img/favicon.ico" />
         <link

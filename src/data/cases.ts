@@ -53,6 +53,9 @@ export const GRAPHIC_CASES: Case[] = [
     link: 'https://www.youtube.com/@STRELASPB',
     firstImg: '/img/digital-design/1_1.png',
     secondImg: '/img/digital-design/1_2.png',
+    firstImgLink: 'https://www.youtube.com/@STRELASPB',
+    secondImgLink:
+      'https://dribbble.com/shots/23686304-Illustration-Banner-News-Digest?utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Banner%20%2F%20News%20Digest&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Banner%20%2F%20News%20Digest&utm_medium=Social_Share',
   },
   {
     id: 2,
@@ -62,6 +65,7 @@ export const GRAPHIC_CASES: Case[] = [
     linkTitle: 'smart food',
     link: 'https://ozon.ru/t/qAJYR7Y',
     firstImg: '/img/print-design/1_1.png',
+    firstImgLink: 'https://ozon.ru/t/qAJYR7Y',
     secondImg: '/img/print-design/1_2.png',
   },
 ];
@@ -76,6 +80,10 @@ export const PROCESS_CASES: Case[] = [
     link: 'hhttps://www.figma.com/community/file/1354563946146740301/banner-templates',
     firstImg: '/img/templates/1_1.png',
     secondImg: '/img/templates/1_2.png',
+    firstImgLink:
+      'https://www.figma.com/community/file/1354563946146740301/banner-templates',
+    secondImgLink:
+      'https://www.figma.com/community/file/1354577578820383826/prioritizing-hypotheses',
   },
   {
     id: 2,
@@ -86,6 +94,10 @@ export const PROCESS_CASES: Case[] = [
     link: 'https://www.figma.com/community/file/1356973297481843450/quiz-template',
     firstImg: '/img/quiz/1_1.png',
     secondImg: '/img/quiz/1_2.png',
+    firstImgLink:
+      'https://www.figma.com/community/file/1356973297481843450/quiz-template',
+    secondImgLink:
+      'https://docs.google.com/spreadsheets/d/1QVPXxo82DsP14noAM-Zg3XPe8xa1dBm7wXmgV7lNSgQ/edit?usp=sharing',
   },
   {
     id: 3,
@@ -96,5 +108,7 @@ export const PROCESS_CASES: Case[] = [
     link: 'https://chrome-sheet-e2b.notion.site/trap-plan-bf3e68d782054c488eaffbf9bc8eba32?pvs=4',
     firstImg: '/img/strategy/1_1.png',
     secondImg: '/img/strategy/1_2.png',
+    firstImgLink:
+      'https://chrome-sheet-e2b.notion.site/Trap-plan-bf3e68d782054c488eaffbf9bc8eba32',
   },
 ];

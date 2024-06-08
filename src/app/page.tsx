@@ -6,7 +6,7 @@ import Header from '@/components/Header/Header';
 import Modal from '@/components/Modal/Modal';
 import Nav from '@/components/Nav/Nav';
 import Welcome from '@/components/Welcome/Welcome';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import styles from './page.module.scss';
 import { Greetings } from '@/components/Greeting';
 import GalleryFooter from '@/components/GallaryFooter';
@@ -15,7 +15,6 @@ import { DIGITAL_CASES, GRAPHIC_CASES, PROCESS_CASES } from '@/data/cases';
 import { Facts } from '@/components/Facts';
 import { DIGITAL_FACTS, GRAPHIC_FACTS, PROCESS_FACTS } from '@/data/facts';
 import { Experience } from '@/components/Experience';
-import { useDisableBodyScroll } from '@/hooks/use-disable-body-scroll';
 
 const cn = classnames.bind(styles);
 
@@ -24,8 +23,6 @@ export default function Home(): JSX.Element {
   const [modal, setModal] = useState(false);
 
   const isLoadingEnds = year === new Date().getFullYear();
-
-  useDisableBodyScroll(isLoadingEnds);
 
   useEffect(() => {
     if (isLoadingEnds) {
@@ -40,16 +37,15 @@ export default function Home(): JSX.Element {
   return (
     <>
       {modal && <Modal setModal={setModal} modal={modal} />}
-      <main className={cn(styles.main, { [styles.loading]: !isLoadingEnds })}>
-        <div className={styles.welcome}>
-          <Header isLoadingEnds={isLoadingEnds} />
-          <Welcome
-            year={year}
-            setYear={setYear}
-            isLoadingEnds={isLoadingEnds}
-          />
-          <Gallery crow={false} year={year} />
-        </div>
+      <main
+        data-scroll
+        className={cn(styles.main, {
+          [styles.loading]: !isLoadingEnds,
+        })}
+      >
+        <Header isLoadingEnds={isLoadingEnds} />
+        <Welcome year={year} setYear={setYear} isLoadingEnds={isLoadingEnds} />
+        <Gallery crow={false} year={year} isLoadingEnds={isLoadingEnds} />
 
         <Cases
           isLoadingEnds={isLoadingEnds}
