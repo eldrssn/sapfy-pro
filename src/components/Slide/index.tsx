@@ -24,7 +24,7 @@ type LinkOrDivProps = {
 };
 
 const LinkWrapper = forwardRef<HTMLAnchorElement, any>((props, ref) => (
-  <a ref={ref} {...props} />
+  <a target="_blank" ref={ref} {...props} />
 ));
 
 const LinkOrDiv = forwardRef<

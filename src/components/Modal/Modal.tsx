@@ -9,10 +9,21 @@ import './styles.css';
 interface ModalProps {
   setModal: React.Dispatch<React.SetStateAction<boolean>>;
   modal: boolean;
+  openModalHref: (id: number) => void;
+  modalId: number | null;
+  closeModalHref: () => void;
 }
 
-function Modal({ setModal, modal }: ModalProps) {
-  const randomTask = getRandomTask(tasks);
+function Modal({
+  setModal,
+  modal,
+  modalId,
+  closeModalHref,
+  openModalHref,
+}: ModalProps) {
+  const task = modalId
+    ? tasks.find((el) => el.id === modalId)
+    : getRandomTask(tasks);
   const headerRef = useRef(null);
   const descriptionRef = useRef(null);
   const overlayPathRef = useRef(null);
@@ -82,6 +93,7 @@ function Modal({ setModal, modal }: ModalProps) {
   useLayoutEffect(() => {
     if (modal) {
       showContent();
+      task?.id && openModalHref(task.id);
     }
   }, [modal]);
 
@@ -107,6 +119,7 @@ function Modal({ setModal, modal }: ModalProps) {
   const handleClose = () => {
     hideContent().then(() => {
       animationWhitePhase();
+      closeModalHref();
     });
   };
 
@@ -119,13 +132,15 @@ function Modal({ setModal, modal }: ModalProps) {
       >
         <div className={style.content}>
           <h2 ref={headerRef} className={style.header}>
-            {randomTask.title}
+            {task?.title}
           </h2>
-          <div
-            ref={descriptionRef}
-            className={style.description}
-            dangerouslySetInnerHTML={{ __html: randomTask.body }}
-          ></div>
+          {task && (
+            <div
+              ref={descriptionRef}
+              className={style.description}
+              dangerouslySetInnerHTML={{ __html: task.body }}
+            ></div>
+          )}
         </div>
 
         <div ref={closeBtnRef} className={style.closeBtn} onClick={handleClose}>

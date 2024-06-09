@@ -6,7 +6,7 @@ import Header from '@/components/Header/Header';
 import Modal from '@/components/Modal/Modal';
 import Nav from '@/components/Nav/Nav';
 import Welcome from '@/components/Welcome/Welcome';
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import styles from './page.module.scss';
 import { Greetings } from '@/components/Greeting';
 import GalleryFooter from '@/components/GallaryFooter';
@@ -15,12 +15,17 @@ import { DIGITAL_CASES, GRAPHIC_CASES, PROCESS_CASES } from '@/data/cases';
 import { Facts } from '@/components/Facts';
 import { DIGITAL_FACTS, GRAPHIC_FACTS, PROCESS_FACTS } from '@/data/facts';
 import { Experience } from '@/components/Experience';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 const cn = classnames.bind(styles);
 
 export default function Home(): JSX.Element {
   const [year, setYear] = useState(1995);
   const [modal, setModal] = useState(false);
+  const [modalId, setModalId] = useState<number | null>(null);
+
+  const searchParams = useSearchParams();
+  const router = useRouter();
 
   const isLoadingEnds = year === new Date().getFullYear();
 
@@ -34,9 +39,34 @@ export default function Home(): JSX.Element {
     }
   }, [isLoadingEnds]);
 
+  useEffect(() => {
+    const practice = searchParams?.get('practice');
+    if (practice) {
+      setModalId(Number(practice));
+    }
+  }, []);
+
+  const openModalHref = (id: number) => {
+    setModalId(id);
+    router.push(`/?practice=${id}`);
+  };
+
+  const closeModalHref = () => {
+    setModalId(null);
+    router.push(`/`);
+  };
+
   return (
-    <>
-      {modal && <Modal setModal={setModal} modal={modal} />}
+    <Suspense>
+      {modal && (
+        <Modal
+          setModal={setModal}
+          modal={modal}
+          openModalHref={openModalHref}
+          modalId={modalId}
+          closeModalHref={closeModalHref}
+        />
+      )}
       <main
         data-scroll
         className={cn(styles.main, {
@@ -71,6 +101,6 @@ export default function Home(): JSX.Element {
         <Footer />
         <Nav setModal={setModal} isLoadingEnds={isLoadingEnds} modal={modal} />
       </main>
-    </>
+    </Suspense>
   );
 }

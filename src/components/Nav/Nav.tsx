@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import style from './styles.module.scss';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useSearchParams } from 'next/navigation';
 
 const cn = classnames.bind(style);
 
@@ -16,6 +17,8 @@ function Nav({
   isLoadingEnds: boolean;
   modal: boolean;
 }): JSX.Element {
+  const searchParams = useSearchParams();
+
   const overlayPathRef = useRef(null);
   const paths = {
     step1: {
@@ -162,6 +165,13 @@ function Nav({
       });
     }
   };
+
+  useEffect(() => {
+    const practice = searchParams?.get('practice');
+    if (practice) {
+      animationBlackPhase();
+    }
+  }, []);
 
   return (
     <>
