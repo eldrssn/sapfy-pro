@@ -370,7 +370,7 @@ Objective: to develop resistance to distracting factors, improve attention contr
                     <p>Get down on all fours, straighten your back, then smoothly arch your back upwards (like a cat), exhaling, and then lower it downwards (like a cow), inhaling. Repeat this exercise for 2 minutes, making movements at a comfortable amplitude and speed for you. </p>
                     <p>
                       The <a target="_blank" href="https://dribbble.com/shots/23784355-Illustration-Infographic-Physical-Fitness?utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Infographic%20%2FPhysical%20Fitness&utm_medium=Social_Share">
-                      "Cat-Cow ↗"</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
+                      «Cat-Cow ↗»</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
                     </p>
                   </div>
                 </div>
@@ -588,7 +588,7 @@ Objective: to develop resistance to distracting factors, improve attention contr
           <p>Get down on all fours, straighten your back, then smoothly arch your back upwards (like a cat), exhaling, and then lower it downwards (like a cow), inhaling. Repeat this exercise for 2 minutes, making movements at a comfortable amplitude and speed for you. </p>
           <p>
           The <a target="_blank" href="https://dribbble.com/shots/23784355-Illustration-Infographic-Physical-Fitness?utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Infographic%20%2FPhysical%20Fitness&utm_medium=Social_Share">
-          "Cat-Cow ↗"</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
+          «Cat-Cow ↗»</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
 </p>
         </div>
       </div>
@@ -802,7 +802,7 @@ Objective: to develop resistance to distracting factors, improve attention contr
           <p>Get down on all fours, straighten your back, then smoothly arch your back upwards (like a cat), exhaling, and then lower it downwards (like a cow), inhaling. Repeat this exercise for 2 minutes, making movements at a comfortable amplitude and speed for you. </p>
           <p>
           The <a target="_blank" href="https://dribbble.com/shots/23784355-Illustration-Infographic-Physical-Fitness?utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Infographic%20%2FPhysical%20Fitness&utm_medium=Social_Share">
-          "Cat-Cow ↗"</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
+          «Cat-Cow ↗»</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
 </p>
         </div>
       </div>
@@ -1013,7 +1013,7 @@ Objective: to develop resistance to distracting factors, improve attention contr
                   <p>Get down on all fours, straighten your back, then smoothly arch your back upwards (like a cat), exhaling, and then lower it downwards (like a cow), inhaling. Repeat this exercise for 2 minutes, making movements at a comfortable amplitude and speed for you. </p>
                   <p>
                   The <a target="_blank" href="https://dribbble.com/shots/23784355-Illustration-Infographic-Physical-Fitness?utm_source=Clipboard_Shot&utm_campaign=Sapfy&utm_content=Illustration%20%2F%20Infographic%20%2FPhysical%20Fitness&utm_medium=Social_Share">
-                  "Cat-Cow ↗"</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
+                  «Cat-Cow ↗»</a>  exercise is a comprehensive workout that helps improve flexibility and strength of the back, stabilize the spine, and relieve tension after prolonged sitting. Smooth movements up and down under the rhythm of breathing help stretch the muscles and improve posture, benefiting both physical and psychological health.
               </p>
                 </div>
               </div>

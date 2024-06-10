@@ -30,7 +30,7 @@ export const experience: ExperienceItem[] = [
     link: 'Present Photo',
     description:
       'Portrait photography / Product photography / Event photography / Photo editing / Graphic design / Development of actions for automating photo editing processes',
-    profession: 'Фотограф-дизайнер',
+    profession: 'Photographer-designer',
   },
   {
     id: 5,

@@ -41,6 +41,11 @@ export default function Home(): JSX.Element {
 
   useEffect(() => {
     const practice = searchParams?.get('practice');
+    
+    if (practice === 'random') {
+      return;
+    }
+
     if (practice) {
       setModalId(Number(practice));
     }
