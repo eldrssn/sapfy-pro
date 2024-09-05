@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/eldrssn/sapfy-pro/blob/master/public/pictures/sf-big.jpg" alt="Screen Shot">
+    <img src="https://github.com/eldrssn/sapfy-pro/blob/master/public/pictures/sf-big.gif" alt="Screen Shot">
 </p>
 
 ## Project Overview 🎉
